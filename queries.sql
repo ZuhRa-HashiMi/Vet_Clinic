@@ -11,3 +11,9 @@ WHERE
 SELECT name
 FROM animals
 WHERE neutered = TRUE AND escape_attempts < 3;
+
+
+
+SELECT date_of_birth
+FROM animals
+WHERE NAME IN ('Agumon', 'Pikachu');

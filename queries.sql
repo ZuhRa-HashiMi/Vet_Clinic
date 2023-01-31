@@ -2,3 +2,8 @@
 SELECT name
 FROM animals
 WHERE NAME LIKE '%mon';
+
+SELECT name
+FROM animals
+WHERE
+  date_of_birth BETWEEN 'January 1, 2016' AND 'December 31, 2019';

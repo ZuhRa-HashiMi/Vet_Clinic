@@ -105,8 +105,8 @@ Example command:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/Mujeeb4582/Vet-clinic-database.git
-  cd Vet-clinic-database
+  git clone https://github.com/ZuhRa-HashiMi/Vet_Clinic
+  cd Vet_Clinic
 ```
 
 ### Usage

@@ -78,3 +78,7 @@ UPDATE animals
 SET weight_kg = weight_kg * (-1)
 WHERE weight_kg < 0;
 COMMIT;
+
+SELECT count(*) FROM animals;
+SELECT count(*) FROM animals
+WHERE escape_attempts = 0;

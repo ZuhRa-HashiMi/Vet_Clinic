@@ -55,3 +55,12 @@ UPDATE animals
 SET species = 'pokemon';
 COMMIT;
 SELECT * FROM animals;
+
+BEGIN;
+DELETE
+FROM animals;
+ROLLBACK;
+SELECT * FROM animals;
+
+-- this will show that the table exists
+\d animals

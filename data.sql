@@ -66,3 +66,43 @@ INSERT INTO
     weight_kg
   )
 VALUES ('Squirtle', 'April 2, 1993', 3, FALSE, -12.13);
+
+INSERT INTO
+  animals (
+    NAME,
+    date_of_birth,
+    escape_attempts,
+    neutered,
+    weight_kg
+  )
+VALUES ('Angemon', 'June 12, 2005', 1, TRUE, -45);
+
+INSERT INTO
+  animals (
+    NAME,
+    date_of_birth,
+    escape_attempts,
+    neutered,
+    weight_kg
+  )
+VALUES ('Boarmon', 'June 7, 2005', 7, TRUE, 20.4);
+
+INSERT INTO
+  animals (
+    NAME,
+    date_of_birth,
+    escape_attempts,
+    neutered,
+     weight_kg
+  )
+VALUES ('Blossom', 'October 13, 1998', 3, TRUE, 17);
+
+INSERT INTO
+  animals (
+    NAME,
+    date_of_birth,
+    escape_attempts,
+    neutered,
+    weight_kg
+  )
+VALUES ('Ditto', 'May 14, 2022', 4, TRUE, 22);

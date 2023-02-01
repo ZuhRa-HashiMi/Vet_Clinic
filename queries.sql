@@ -33,14 +33,14 @@ WHERE NAME <> 'Gabumon';
 SELECT *
 FROM animals
 WHERE weight_kg BETWEEN 10.4 AND 17.3;  
-
+-- Tansection is started
 BEGIN;
 UPDATE animals
 SET species = 'unspecified';
 SELECT * FROM animals;
 ROLLBACK;
 SELECT * FROM animals
-
+-- update the table to setting the species column and changes persists after commit 
 BEGIN;
 UPDATE animals
 SET species = 'digimon'
@@ -49,11 +49,6 @@ WHERE name LIKE '%mon';
 UPDATE animals
 SET species = 'pokemon'
 WHERE species IS NULL;
-COMMIT;
-SELECT * FROM animals;
-
-UPDATE animals
-SET species = 'pokemon';
 COMMIT;
 SELECT * FROM animals;
 

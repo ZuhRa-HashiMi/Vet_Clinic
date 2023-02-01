@@ -70,3 +70,11 @@ DELETE
 FROM animals
 WHERE date_of_birth > 'January 1, 2022';
 SAVEPOINT younger_deleted;
+
+UPDATE animals
+SET weight_kg = weight_kg * (-1);
+ROLLBACK TO younger_deleted;
+UPDATE animals
+SET weight_kg = weight_kg * (-1)
+WHERE weight_kg < 0;
+COMMIT;

@@ -21,3 +21,10 @@ CREATE TABLE
     age INT
    
   );
+
+  CREATE TABLE
+  species (
+    id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    NAME VARCHAR(250)
+   
+  );

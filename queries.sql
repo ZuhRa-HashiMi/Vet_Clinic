@@ -105,3 +105,9 @@ LEFT JOIN animals ON animals.owner_id = owners.id;
 SELECT species.name AS species, count(*)  FROM animals
 JOIN species ON species_id = species.id
 GROUP BY species.id;
+
+
+SELECT animals.name AS animal 
+FROM animals
+JOIN species ON species_id = species.id
+WHERE species.name = 'Digimon' AND owner_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell');

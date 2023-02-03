@@ -1,15 +1,14 @@
 /* Database schema to keep the structure of entire database. */
 CREATE DATABASE Vet_clinic;
 
-CREATE TABLE
-  animals (
- ID INT PRIMARY KEY	GENERATED ALWAYS AS IDENTITY,
-    NAME VARCHAR(64) NOT NULL,
+CREATE TABLE animals (
+    id INT NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100) NOT NULL,
     date_of_birth DATE NOT NULL,
     escape_attempts INT NOT NULL,
     neutered BOOLEAN NOT NULL,
-    weight_kg REAL  NOT NULL
-  );
+    weight_kg DECIMAL(10,2) NOT NULL
+);
 
 ALTER TABLE animals
 ADD COLUMN species VARCHAR(128);
@@ -52,4 +51,11 @@ CREATE TABLE specializations (
   id SERIAL PRIMARY KEY,
   vet_id INT REFERENCES vets(id) ON UPDATE CASCADE ON DELETE CASCADE,
   species_id INT REFERENCES species(id) ON UPDATE CASECADE ON DELETE CASCADE
+);
+
+CREATE TABLE visits (
+    id SERIAL PRIMARY KEY,
+    animal_id INTEGER REFERENCES animals(id) ON UPDATE CASCADE ON DELETE CASCADE,
+    vet_id INTEGER REFERENCES vets(id) ON UPDATE CASCADE ON DELETE CASCADE,
+    visit_date DATE NOT NULL
 );

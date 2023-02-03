@@ -118,30 +118,16 @@ VALUES ('Sam Smith', 34),
 INSERT INTO species (NAME)
 VALUES ('Pokemon'),
 ('Digimon');
-
- 
-BEGIN;
-
+-- Update the animals table with species_id information
 UPDATE animals
-SET species_id = CASE
-    WHEN NAME LIKE '%mon'
-    THEN (
-      SELECT id
-      FROM species
-      WHERE NAME = 'Digimon'
+SET species_id = (
+    SELECT id FROM species WHERE name = (
+        CASE
+            WHEN animals.name LIKE '%mon' THEN 'Digimon'
+            ELSE 'Pokemon'
+        END
     )
-    ELSE (
-      SELECT id
-      FROM species
-      WHERE NAME = 'Pokemon'
-    )
-  END;
-  
-  SELECT *
-FROM animals;
-COMMIT;
-
-
+);
 BEGIN;
 
 UPDATE animals

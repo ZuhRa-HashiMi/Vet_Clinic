@@ -47,3 +47,9 @@ CREATE TABLE vets (
   age INT NOT NULL,
   date_of_graduation DATE NOT NULL
 );
+
+CREATE TABLE specializations (
+  id SERIAL PRIMARY KEY,
+  vet_id INT REFERENCES vets(id) ON UPDATE CASCADE ON DELETE CASCADE,
+  species_id INT REFERENCES species(id) ON UPDATE CASECADE ON DELETE CASCADE
+);

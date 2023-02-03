@@ -1,112 +1,34 @@
 /* Populate database with sample data. */
 INSERT INTO
   animals (
-    NAME,
+    name,
     date_of_birth,
     escape_attempts,
     neutered,
     weight_kg
   )
-VALUES ('Agumon', 'February 3, 2020', 0, TRUE, 10.23);INSERT INTO
-  animals (
-    NAME,
-    date_of_birth,
-    escape_attempts,
-    neutered,
-    weight_kg
-  )
-VALUES ('Gabumon', 'November 15, 2018', 2, TRUE, 8);
+VALUES
+  ('Agumon', '2020-02-03', 0, true, 10.23),
+  ('Gabumon', '2018-11-15', 2, true, 8),
+  ('Pikachu', '2021-01-07', 1, false, 15.04),
+  ('Devimon', '2017-05-12', 5, true, 11.00);
 
 INSERT INTO
   animals (
-    NAME,
+    name,
     date_of_birth,
     escape_attempts,
     neutered,
     weight_kg
   )
-VALUES ('Pikachu', 'January 7, 2021', 1, FALSE, 15.04);
-
-INSERT INTO
-  animals (
-    NAME,
-    date_of_birth,
-    escape_attempts,
-    neutered,
-    weight_kg
-  )
-VALUES ('Devimon', 'May 12, 2017', 5, TRUE, 11);
-
-INSERT INTO
-  animals (
-    NAME,
-    date_of_birth,
-    escape_attempts,
-    neutered,
-    weight_kg
-  )
-VALUES ('Charmander', 'February 8, 2020', 0, TRUE, -11);
-
-INSERT INTO
-  animals (
-    NAME,
-    date_of_birth,
-    escape_attempts,
-    neutered,
-    weight_kg
-  )
-VALUES ('Plantmon', 'November 15, 2021', 2, TRUE, -5.7);
-
-INSERT INTO
-  animals (
-    NAME,
-    date_of_birth,
-    escape_attempts,
-    neutered,
-    weight_kg
-  )
-VALUES ('Squirtle', 'April 2, 1993', 3, FALSE, -12.13);
-
-INSERT INTO
-  animals (
-    NAME,
-    date_of_birth,
-    escape_attempts,
-    neutered,
-    weight_kg
-  )
-VALUES ('Angemon', 'June 12, 2005', 1, TRUE, -45);
-
-INSERT INTO
-  animals (
-    NAME,
-    date_of_birth,
-    escape_attempts,
-    neutered,
-    weight_kg
-  )
-VALUES ('Boarmon', 'June 7, 2005', 7, TRUE, 20.4);
-
-INSERT INTO
-  animals (
-    NAME,
-    date_of_birth,
-    escape_attempts,
-    neutered,
-     weight_kg
-  )
-VALUES ('Blossom', 'October 13, 1998', 3, TRUE, 17);
-
-INSERT INTO
-  animals (
-    NAME,
-    date_of_birth,
-    escape_attempts,
-    neutered,
-    weight_kg
-  )
-VALUES ('Ditto', 'May 14, 2022', 4, TRUE, 22);
-
+VALUES
+  ('Charmander', '2020-02-08', 0, false, -11.00),
+  ('Plantmon', '2021-11-15', 2, true, -5.70),
+  ('Squirtle', '1993-04-02', 3, false, -12.13),
+  ('Angemon', '2005-06-12', 1, true, -45.00),
+  ('Boarmon', '2005-06-07', 7, true, 20.40),
+  ('Blossom', '1998-10-13', 3, true, 17.00),
+  ('Ditto', '2022-05-14', 4, true, 22.00);
 INSERT INTO owners (full_name, age)
 VALUES ('Sam Smith', 34),
 ('Jennifer Orwell', 19),

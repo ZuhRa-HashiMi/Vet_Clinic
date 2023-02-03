@@ -1,7 +1,7 @@
 /*Queries that provide answers to the questions from all projects.*/
 SELECT name
 FROM animals
-WHERE NAME LIKE '%mon';
+WHERE name LIKE '%mon';
 
 SELECT name
 FROM animals
@@ -16,7 +16,7 @@ WHERE neutered = TRUE AND escape_attempts < 3;
 
 SELECT date_of_birth
 FROM animals
-WHERE NAME IN ('Agumon', 'Pikachu');
+WHERE name IN ('Agumon', 'Pikachu');
 
 SELECT name
 FROM animals
@@ -28,7 +28,7 @@ WHERE neutered = TRUE;
 
 SELECT *
 FROM animals
-WHERE NAME <> 'Gabumon';
+WHERE name <> 'Gabumon';
 
 SELECT *
 FROM animals

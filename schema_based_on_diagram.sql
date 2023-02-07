@@ -23,3 +23,5 @@ CREATE TABLE invoices(
 	medical_history_id INT,
      FOREIGN KEY (medical_history_id ) REFERENCES medical_histories(id)
 );
+
+CREATE INDEX patient_id_asc ON medical_histories(patient_id ASC);

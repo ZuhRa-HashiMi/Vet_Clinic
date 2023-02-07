@@ -29,3 +29,4 @@ CREATE INDEX medical_history_id_asc ON invoices(medical_history_id ASC);
 CREATE INDEX invoice_id_asc ON invoice_items(invoice_id ASC);
 CREATE INDEX treatment_id_asc ON invoice_items(treatment_id ASC);
 CREATE INDEX idx_treatment_id ON hospitalizations(treatment_id);
+CREATE INDEX idx_medical_histories_id ON hospitalizations(medical_histories_id);

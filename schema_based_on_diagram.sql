@@ -24,6 +24,13 @@ CREATE TABLE invoices(
      FOREIGN KEY (medical_history_id ) REFERENCES medical_histories(id)
 );
 
+-- create treatments table
+CREATE TABLE treatments(
+	id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+	type varchar(255),
+	name varchar(255)
+);
+
 CREATE INDEX patient_id_asc ON medical_histories(patient_id ASC);
 CREATE INDEX medical_history_id_asc ON invoices(medical_history_id ASC);
 CREATE INDEX invoice_id_asc ON invoice_items(invoice_id ASC);

@@ -31,6 +31,28 @@ CREATE TABLE treatments(
 	name varchar(255)
 );
 
+CREATE TABLE hospitalizations(
+    ID int PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+	medical_history_id INT,
+	treatment_id INT,
+	FOREIGN KEY (treatment_id) REFERENCES treatments(id),
+	
+	FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id)
+);
+
+CREATE TABLE invoice_items(
+	id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY, 
+	unit_price decimal, 
+	quantity INT, 
+	total_price decimal,
+invoice_id INT, 
+treatment_id INT, 
+FOREIGN KEY(invoice_id) 
+REFERENCES invoices(id), 
+FOREIGN KEY(treatment_id) 
+REFERENCES treatments(id));
+
+
 CREATE INDEX patient_id_asc ON medical_histories(patient_id ASC);
 CREATE INDEX medical_history_id_asc ON invoices(medical_history_id ASC);
 CREATE INDEX invoice_id_asc ON invoice_items(invoice_id ASC);

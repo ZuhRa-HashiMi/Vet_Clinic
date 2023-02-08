@@ -191,6 +191,6 @@ If you like this project give a Star⭐️.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Mujeeb4582/Vet-clinic-database/blob/animal-table/Licence) licensed.
+This project is [MIT](https://github.com) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

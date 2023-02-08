@@ -35,21 +35,6 @@ A vet clinic database is a tutorial for using a relational database to organize 
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
 
 <details>
 <summary>Database</summary>
@@ -72,8 +57,6 @@ A vet clinic database is a tutorial for using a relational database to organize 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link]()
      - Under Construction 
 
@@ -86,19 +69,9 @@ A vet clinic database is a tutorial for using a relational database to organize 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
- In order to run this project you need:
-
-[Postgresql](https://www.postgresql.org/)
+You need to have aknowledge about:
+- SQL
+- [Postgresql](https://www.postgresql.org/)
 
 ### Setup
 
@@ -146,6 +119,11 @@ To run the project, execute the following command:
 - Twitter: [@twitterhandle](https://twitter.com/zuhrahashimi4)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/zuhra-hashimi/)
 
+👤 **Agasha Bornittah**
+
+- GitHub: [@Bornittah](https://github.com/Bornittah)
+- Twitter: [@AgashaBornittah](https://twitter.com/AgashaBornittah)
+- LinkedIn: [Bornittah](www.linkedin.com/in/agasha-bornittah)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -190,7 +168,7 @@ If you like this project give a Star⭐️.
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
-
-This project is [MIT](https://github.com) licensed.
+This project is [MIT](./LICENSE) licensed.
+<!-- This project is [MIT](https://github.com/Mujeeb4582/Vet-clinic-database/blob/animal-table/Licence) licensed. -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
